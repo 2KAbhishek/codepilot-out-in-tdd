@@ -15,24 +15,14 @@ RSpec.describe Completion, type: :model do
     \"index\":0}]}\n"
   end
 
-  let(:mock_content) do
-    "\n\nIn Ruby you can use the following code:\n\n```ruby\nputs \"Hello, World!\"\n```\n\n"
-  end
-
   let(:expected_info) { "\nIn Ruby you can use the following code:\n\n" }
 
   let(:expected_code) { "ruby\nputs \"Hello, World!\"\n" }
 
-  it 'parses response and returns content' do
-    expect(subject.parse_content(mock_response)).to eq mock_content
-  end
+  let(:expected_completion) { { code: expected_code, info: expected_info } }
 
-  it 'parses content and returns info' do
-    expect(subject.parse_info(mock_content)).to be_truthy
-  end
-
-  it 'parses content and returns code' do
-    expect(subject.parse_code(mock_content)).to eq expected_code
+  it 'gets completion from gateway' do
+    expect(subject.parse_response(mock_response)).to eq expected_completion
   end
 
   it 'calls gateway to fetch completions' do

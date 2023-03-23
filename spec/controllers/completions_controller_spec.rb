@@ -8,13 +8,9 @@ describe CompletionsController do
       expect(response.status).to eql(200)
     end
 
-    it 'response should contain code' do
+    it 'response should contain proper response' do
       get :ask, params: { query: query }, as: :json
       expect(JSON.parse(response.body)['code']).to have_attributes(size: (be > 0))
-    end
-
-    it 'response should contain info' do
-      get :ask, params: { query: query }, as: :json
       expect(JSON.parse(response.body)['info']).to have_attributes(size: (be > 0))
     end
 

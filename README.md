@@ -1,97 +1,75 @@
 <div align = "center">
 
-<h1><a href="https://github.com/2kabhishek/BareMinimum">BareMinimum</a></h1>
+<h1><a href="https://github.com/2kabhishek/codepilot-out-in-tdd">CodePilot Out In TDD</a></h1>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/blob/main/LICENSE">
-<img alt="License" src="https://img.shields.io/github/license/2kabhishek/BareMinimum?style=flat&color=eee&label="> </a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/2kabhishek/codepilot-out-in-tdd?style=flat&color=eee&label="> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/graphs/contributors">
-<img alt="People" src="https://img.shields.io/github/contributors/2kabhishek/BareMinimum?style=flat&color=ffaaf2&label=People"> </a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/graphs/contributors">
+<img alt="People" src="https://img.shields.io/github/contributors/2kabhishek/codepilot-out-in-tdd?style=flat&color=ffaaf2&label=People"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/2kabhishek/BareMinimum?style=flat&color=98c379&label=Stars"></a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/stargazers">
+<img alt="Stars" src="https://img.shields.io/github/stars/2kabhishek/codepilot-out-in-tdd?style=flat&color=98c379&label=Stars"></a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/2kabhishek/BareMinimum?style=flat&color=66a8e0&label=Forks"> </a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/network/members">
+<img alt="Forks" src="https://img.shields.io/github/forks/2kabhishek/codepilot-out-in-tdd?style=flat&color=66a8e0&label=Forks"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/watchers">
-<img alt="Watches" src="https://img.shields.io/github/watchers/2kabhishek/BareMinimum?style=flat&color=f5d08b&label=Watches"> </a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/watchers">
+<img alt="Watches" src="https://img.shields.io/github/watchers/2kabhishek/codepilot-out-in-tdd?style=flat&color=f5d08b&label=Watches"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/pulse">
-<img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/BareMinimum?style=flat&color=e06c75&label="> </a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd/pulse">
+<img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/codepilot-out-in-tdd?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
-
-<figure>
-  <img src="images/screenshot.png" alt="BareMinimum in action">
-  <br/>
-  <figcaption>BareMinimum in action</figcaption>
-</figure>
+<h3>OpenAI autocompletion with Outside In TDD 🤖✨</h3>
 
 </div>
 
-BareMinimum is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+codepilot-out-in-tdd is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
 
 ## ✨ Features
 
-- Supports foo
-- Can do bar
-- Works with bazz
+-   Fetches completions from OpenAI API
+-   Implemented following Outside In TDD and Layered Architecture
+-   Contains CI pipeline with lint and test
 
 ## Setup
 
 ### ⚡ Requirements
 
-- foo >= bar
-- bazz
+-   ruby 3.0.4
 
 ### 🚀 Installation
 
 ```bash
-git clone https://github.com/2kabhishek/BareMinimum
-cd BareMinimum
-<install_command>
+git clone https://github.com/2kabhishek/codepilot-out-in-tdd
+cd codepilot-out-in-tdd
+bundle install
+rspec # run tests
+rails s # run server
 ```
 
 ### 💻 Usage
 
-```bash
-USAGE:
-    BareMinimum [FLAGS] [OPTIONS]
-Example:
-    BareMinimum
-```
+You can go to the server url and navigate to `/completions/ask` path with query as a query param
 
-## What's Next
+For example: `http://localhost:3000/completions/ask?query=how to write hello world in ruby`
 
-Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-
-##  Behind The Code
+## Behind The Code
 
 ### 🌈 Inspiration
 
-BareMinimum was inspired by `<reason/idea>`.
+-   Learning Outside In TDD with https://github.com/sapanparikh18
 
 ### 💡 Challenges/Learnings
 
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+-   The main challenges were mocking and creating the architecture in rails
+-   Lack of documentation around the subject for rails
 
 ### 🧰 Tooling
 
-- [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
-- [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
-
-### 🔍 More Info
-
-- [similar](https://github.com/2kabhishek/similar) — a related repo
+-   [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
+-   [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
+-   [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
 
 <hr>
 
@@ -99,7 +77,7 @@ BareMinimum was inspired by `<reason/idea>`.
 
 <strong>⭐ hit the star button if you found this useful ⭐</strong><br>
 
-<a href="https://github.com/2KAbhishek/BareMinimum">Source</a>
+<a href="https://github.com/2KAbhishek/codepilot-out-in-tdd">Source</a>
 | <a href="https://2kabhishek.github.io/blog" target="_blank">Blog </a>
 | <a href="https://twitter.com/2kabhishek" target="_blank">Twitter </a>
 | <a href="https://linkedin.com/in/2kabhishek" target="_blank">LinkedIn </a>
@@ -107,4 +85,3 @@ BareMinimum was inspired by `<reason/idea>`.
 | <a href="https://2kabhishek.github.io/projects" target="_blank">Other Projects </a>
 
 </div>
-

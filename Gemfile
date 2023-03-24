@@ -16,6 +16,8 @@ gem 'puma', '~> 5.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'httparty', '~> 0.21.0'
+gem 'rubocop', '~> 1.48'
+gem 'rubocop-rails', '~> 2.18'
 gem 'webmock', '~> 3.18'
 
 group :development, :test do

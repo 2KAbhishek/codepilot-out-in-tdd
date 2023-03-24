@@ -24,7 +24,7 @@
 
 </div>
 
-codepilot-out-in-tdd is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+Fetch completions from OpenAI using rails, implemented using Outside In TDD
 
 ## ✨ Features
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Completion
   include OpenAiGateway
   def get_completion(prompt)

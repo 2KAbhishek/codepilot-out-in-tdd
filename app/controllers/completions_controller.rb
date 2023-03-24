@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CompletionsController < ApplicationController
   def ask
     query = params[:query]

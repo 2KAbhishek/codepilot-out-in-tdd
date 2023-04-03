@@ -18,7 +18,7 @@ class Completion
   private
 
   def parse_content(response)
-    JSON.parse(response)['choices'].first['message']['content']
+    JSON.parse(response).dig('choices', 0, 'message', 'content')
   end
 
   def parse_code(content)

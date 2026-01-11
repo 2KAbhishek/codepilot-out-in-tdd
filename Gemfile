@@ -17,7 +17,7 @@ gem 'puma', '~> 5.6'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'httparty', '~> 0.21.0'
+gem 'httparty', '~> 0.24.0'
 gem 'rubocop', '~> 1.48'
 gem 'rubocop-rails', '~> 2.18'
 gem 'webmock', '~> 3.18'
